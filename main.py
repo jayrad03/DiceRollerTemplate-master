@@ -22,7 +22,10 @@ def roll_all_dice(event):
 
     
     for roll in range(diceA):
-        document.getElementById("roll-history").innerText = ("Result ", roll,": ",str(dice.dice_roll(dice_type)))
+        #document.getElementById("roll-history").innerText
+        result = ("Roll ", roll, ":", str(dice.dice_roll(dice_type)), "\n")
+        addToResults += result
+        document.getElementById("roll-history").innerText = addToResults
         roll += 1
 
 def clear_history(event):
