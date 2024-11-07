@@ -23,19 +23,33 @@
         <!-- webpage title (shows in browser tab) -->
         <title>Pyscript Web Dice Roller</title>
     </head>
-
+        <h1> Weclome to the dice rolling website! </h1>
     <body>
-        <dialog id="loading"><h1>Loading python environment...</h1></dialog>
+        <dialog id="loading"><h2>Loading python environment...</h2></dialog>
         <!-- Start of your code -->
 
+        <div class="Intro">
+            <p>Welcome! If you ever find yourself needing to roll any amount of dice for any reason, feel free to use this website! Wether you're a avid gambler or don't have any dice for Dungeons and Dragons, this website can provide any amount of dice with any amount of faces to aid and help in your dice rolling endevour.</p>
+        </div>
 
+        <div class="Count">
+            <p> Please type below, how many dice you want to roll: <br><br> </p>
+            <input type="number" id="nDice" placeholder="Dice amount">
+            <p> Please type below, how many faces each dice will have: <br><br> </p>
 
-
-
-
-
-
-
+            <select name="face" id="nfaces">
+                <option value="1">Coin</option>
+                <option value="1">D4</option>
+                <option value="1">D6</option>
+                <option value="1">D8</option>
+                <option value="1">D10</option>
+                <option value="1">D20</option>
+                <option value="1">D100</option>
+            </select>
+            <div class="roll-history">
+                <p> Here's a list of the results: <br><br> </p>
+            </div>
+        </div>
 
         <!-- End of your code -->
         <script type="py" src="main.py" config="./pyscript.json"></script>
