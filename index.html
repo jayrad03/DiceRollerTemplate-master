@@ -35,10 +35,10 @@
         <div class="Count">
             <p> Please type below, how many dice you want to roll: <br><br> </p>
             <input type="number" id="diceAmount" placeholder="Dice amount">
-            <p> Please type below, how many faces each dice will have: <br><br> </p>
+            <p> Please select how many faces each dice will have below: <br><br> </p>
 
             <select name="face" id="Coin">
-                <option value="1">Coin</option>
+                <option value="1">D2 / Coin</option>
                 <option value="1">D4</option>
                 <option value="1">D6</option>
                 <option value="1">D8</option>
@@ -49,10 +49,10 @@
 
             <br><br><br>
 
-            <button onclick="roll_all_dice()">Roll the dice!</button>
+            <button id="rollButton">Roll the dice!</button>
 
             <div class="roll-history">
-                
+
             </div>
         </div>
 
