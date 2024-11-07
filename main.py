@@ -22,12 +22,12 @@ def roll_all_dice(event):
 
 
     for roll in range(diceA):
-        document.getElementById("roll-history").innerText = dice.dice_roll(int(dice_type))
+        document.getElementById("roll-history").innerText = ("Result ", roll,": ",dice.dice_roll(int(dice_type, diceA)))
         roll += 1
 
 def clear_history(event):
     # this finds the div tag with id attribute 'roll-history' and clears whatever is inside
-    document.querySelector("div#roll-history").innerHTML = ""
+    document.querySelector("div#roll-history").innerHTML = " "
     
 button = document.getElementById("rollButton")
 button.addEventListener("click", create_once_callable(roll_all_dice))
