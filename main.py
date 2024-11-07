@@ -22,10 +22,12 @@ def roll_all_dice(event):
         document.getElementById("roll-history").innerText = dice.dice_roll(int(dice_type))
         roll += 1
     
+def on_button_click(event):
 
 
 def clear_history(event):
     # this finds the div tag with id attribute 'roll-history' and clears whatever is inside
     document.querySelector("div#roll-history").innerHTML = ""
     
-#button = document.getElementById("rollButton").addEventListener("click", roll_all_dice)
+button = document.getElementById("rollButton")
+button.addEventListener("click", create_proxy(on_button_click))
