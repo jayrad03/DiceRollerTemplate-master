@@ -19,14 +19,14 @@ def roll_all_dice(event):
     diceA = int(diceAm.value)
     print(dice_type)
     print(diceA)
-
-    addToResults = ("")
+    
+    newStr = ("")
     
     for roll in range(diceA):
         #document.getElementById("roll-history").innerText
         result = ("Roll ", roll, ":", str(dice.dice_roll(dice_type)), "\n")
-        addToResults += result
-        document.getElementById("roll-history").innerText = addToResults
+        newStr += result
+        document.getElementById("roll-history").innerText = newStr
         roll += 1
 
 def clear_history(event):
