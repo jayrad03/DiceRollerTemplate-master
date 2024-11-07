@@ -14,7 +14,8 @@ def select_face_option(event):
 
 
 def roll_all_dice(event):
-    global dice_type  # use global var named dice_type
+    global dice_type
+    global diceA
     #dice.dice_roll(dice_type)
 
     for roll in range(int(diceA)):
@@ -27,4 +28,4 @@ def clear_history(event):
     # this finds the div tag with id attribute 'roll-history' and clears whatever is inside
     document.querySelector("div#roll-history").innerHTML = ""
 
-document.getElementById("rollButton").addEventListener("click", create_proxy(roll_all_dice))
+document.getElementById("rollButton").addEventListener("click", roll_all_dice)
