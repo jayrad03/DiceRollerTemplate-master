@@ -16,7 +16,9 @@ def select_face_option(event):
 
 def roll_all_dice(event):
     global dice_type
-    global diceA
+    global diceA    
+    dice_type = document.getElementById("Coin")
+    diceA = document.getElementById("DiceAmount")
     #dice.dice_roll(dice_type)
 
     for roll in range(diceA):
