@@ -1,5 +1,5 @@
 from pyscript import document
-from pyscript import create_once_callable
+from pyodide.ffi import create_once_callable
 import dice
 
 
