@@ -27,4 +27,4 @@ def clear_history(event):
     # this finds the div tag with id attribute 'roll-history' and clears whatever is inside
     document.querySelector("div#roll-history").innerHTML = ""
 
-document.getElementById("rollButton").addEventListener("click", roll_all_dice)
+document.getElementById("rollButton").addEventListener("click", create_proxy(roll_all_dice))
