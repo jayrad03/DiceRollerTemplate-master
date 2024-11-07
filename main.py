@@ -25,7 +25,7 @@ def roll_all_dice(event):
     
 def on_button_click(event):
 
-    roll_all_dice()
+    roll_all_dice(event)
 
 
 def clear_history(event):
