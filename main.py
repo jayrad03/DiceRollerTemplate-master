@@ -20,6 +20,7 @@ def roll_all_dice(event):
     print(dice_type)
     print(diceA)
 
+    addToResults = ("")
     
     for roll in range(diceA):
         #document.getElementById("roll-history").innerText
