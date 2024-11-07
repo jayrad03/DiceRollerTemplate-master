@@ -1,4 +1,5 @@
 from pyscript import document
+from pyscript import create_once_callable
 import dice
 
 
@@ -32,4 +33,4 @@ def clear_history(event):
     document.querySelector("div#roll-history").innerHTML = ""
     
 button = document.getElementById("rollButton")
-button.addEventListener("click", on_button_click)
+button.addEventListener("click", create_once_callable(on_button_click))
