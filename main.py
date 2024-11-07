@@ -13,8 +13,10 @@ def select_face_option(event):
 
 def roll_all_dice(event):
 
-    dice_type = document.getElementById("Coin")
-    diceA = document.getElementById("diceAmount")
+    diceTy = document.getElementById("Coin")
+    dice_type = diceTy.value
+    diceAm = document.getElementById("diceAmount")
+    diceA = diceAm.value
     print(dice_type)
     print(diceA)
     #dice.dice_roll(dice_type)
