@@ -32,4 +32,4 @@ def clear_history(event):
     document.querySelector("div#roll-history").innerHTML = ""
     
 button = document.getElementById("rollButton")
-button.addEventListener("click", create_proxy(on_button_click))
+button.addEventListener("click", on_button_click)
