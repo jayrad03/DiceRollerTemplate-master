@@ -14,12 +14,12 @@ def select_face_option(event):
 def roll_all_dice(event):
 
     diceTy = document.getElementById("Coin")
-    dice_type = diceTy.value
+    dice_type = int(diceTy.value)
     diceAm = document.getElementById("diceAmount")
-    diceA = diceAm.value
+    diceA = int(diceAm.value)
     print(dice_type)
     print(diceA)
-    #dice.dice_roll(dice_type)
+
 
     for roll in range(diceA):
         document.getElementById("roll-history").innerText = dice.dice_roll(int(dice_type))
