@@ -5,9 +5,6 @@ import dice
 
 # GLOBAL (script-wide) variable
 # this stores the selected face option from the drop-down list
-dice_type = document.getElementById("Coin")
-diceA = document.getElementById("DiceAmount")
-
 
 def select_face_option(event):
     global dice_type  # use global var named dice_type
@@ -15,10 +12,9 @@ def select_face_option(event):
 
 
 def roll_all_dice(event):
-    global dice_type
-    global diceA    
-    dice_type = document.getElementById("Coin")
-    diceA = document.getElementById("DiceAmount")
+
+    dice_type = int(document.getElementById("Coin"))
+    diceA = int(document.getElementById("DiceAmount"))
     #dice.dice_roll(dice_type)
 
     for roll in range(diceA):
