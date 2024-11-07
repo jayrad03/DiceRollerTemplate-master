@@ -24,6 +24,8 @@ def roll_all_dice(event):
     
 def on_button_click(event):
 
+    roll_all_dice()
+
 
 def clear_history(event):
     # this finds the div tag with id attribute 'roll-history' and clears whatever is inside
