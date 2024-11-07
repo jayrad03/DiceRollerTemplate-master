@@ -1,6 +1,7 @@
 body{
     background-color: darkslategrey;
-
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 h1 {
@@ -30,6 +31,8 @@ h1 {
 select{
     width: 600px;
     height: 60px;
+    background-color: black;
+    color: white;
     text-align: center;
     font-size: 50px;
 }
@@ -37,6 +40,17 @@ select{
 input{
     width: 600px;
     height: 60px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+button{
+    width: 600px;
+    height: 60px;
+    background-color: black;
+    color: white;
     text-align: center;
     font-size: 50px;
 }

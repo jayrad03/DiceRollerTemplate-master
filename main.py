@@ -5,6 +5,7 @@ import dice
 # GLOBAL (script-wide) variable
 # this stores the selected face option from the drop-down list
 dice_type = "Coin"
+diceA = "DiceAmount"
 
 
 def select_face_option(event):
@@ -14,7 +15,12 @@ def select_face_option(event):
 
 def roll_all_dice(event):
     global dice_type  # use global var named dice_type
-    ...  # replace with your own code
+    #dice.dice_roll(dice_type)
+
+    for roll in range(int(diceA)):
+        document.getElementById("roll-history").innerText = dice.dice_roll(int(dice_type))
+        roll += 1
+    
 
 
 def clear_history(event):
